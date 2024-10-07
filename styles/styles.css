@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151515;
+}
+body header .header-container {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif, serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+body header .header-container h2.active {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
+body header .header-container i {
+  color: #e5e7eb;
+  font-size: 1.5rem;
+}
+body header .header-container i:hover {
+  color: rgb(78, 225, 160);
+}
+body header .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  padding-bottom: 15vh;
+  border-bottom: 0.4px solid #fff;
+}
+body header .container .container-text {
+  flex: 1;
+}
+body header .container .container-text .title {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 3.5rem;
+  margin-bottom: 5vh;
+}
+body header .container .container-text .container-paragraph {
+  color: rgb(217, 217, 217);
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 1.3rem;
+  margin-bottom: 5vh;
+}
+body header .container .container-text a {
+  background-color: #151515;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+body header .container .container-text a.active {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
+body header .container .container-text a:hover {
+  color: rgb(78, 225, 160);
+}
+body header .container .container-text i {
+  display: none;
+}
+body header .container .image-container {
+  flex: 1;
+  margin-right: 5vh;
+  margin-top: 5vh;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 480px) {
+  body header .container .image-container {
+    display: none;
+  }
+}
+body main #experience-container,
+body main .new-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* Espaço entre os itens */
+  margin: 5vh 5vh;
+  font-family: "Space Grotesk", sans-serif, serif;
+}
+@media screen and (max-width: 480px) {
+  body main #experience-container,
+  body main .new-card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body main #experience-container,
+  body main .new-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    word-wrap: break-word;
+  }
+}
+body main #experience-container .new-card-title,
+body main .new-card-grid .new-card-title {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 4vh;
+}
+body main #experience-container .new-card-paragraph,
+body main .new-card-grid .new-card-paragraph {
+  color: rgb(217, 217, 217);
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 1.25rem;
+}
+body main #projects .projects-title {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 3.5rem;
+  margin: 5vh 5vh;
+}
+body main #projects #card-grid-projects,
+body main #projects .card-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3vh 2vh;
+  gap: 5px;
+}
+@media screen and (max-width: 480px) {
+  body main #projects #card-grid-projects,
+  body main #projects .card-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body main #projects #card-grid-projects,
+  body main #projects .card-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
+body main #projects #card-grid-projects .card,
+body main #projects .card-projects-grid .card {
+  justify-content: center;
+  align-items: center;
+}
+body main #projects #card-grid-projects .card .new-container .card-img,
+body main #projects .card-projects-grid .card .new-container .card-img {
+  max-width: 100%;
+  height: auto;
+}
+body main #projects #card-grid-projects .card .project-title,
+body main #projects .card-projects-grid .card .project-title {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 1.8rem;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+body main #projects #card-grid-projects .card .card-description,
+body main #projects .card-projects-grid .card .card-description {
+  color: rgb(217, 217, 217);
+  font-family: "Space Grotesk", sans-serif, serif;
+  font-size: 1.3rem;
+  margin-bottom: 3vh;
+}
+body main #projects #card-grid-projects .card .card-link,
+body main #projects .card-projects-grid .card .card-link {
+  font-family: "Space Grotesk", sans-serif, serif;
+  text-decoration: none;
+  color: #fff;
+}
+body main #projects #card-grid-projects .card .card-link:hover,
+body main #projects .card-projects-grid .card .card-link:hover {
+  color: rgb(78, 225, 160);
+}
+body main #projects #card-grid-projects .card .card-link.active,
+body main #projects .card-projects-grid .card .card-link.active {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
+body footer .footer-container {
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif, serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  border-top: 0.4px solid #fff;
+}
+body footer .footer-title {
+  margin-top: 5vh;
+}
+body footer h2.active {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
+body footer i {
+  color: #e5e7eb;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+}
+body footer i:hover {
+  color: rgb(78, 225, 160);
+}/*# sourceMappingURL=styles.css.map */
